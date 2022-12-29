@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.under-nav {
+    width: 100%;
+    
+    /* padding: 5px; */
+}
+
+.profile {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; */
+    /* align-items: center; */
+    background-color: lightgray;
+}
+
+.profile .title {
+    /* margin-top: 5px; */
+    padding-top: 5px;
+}
+
+.profile .title h2 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.profile-text {
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.item0 h3 {
+    font-size: 46px;
+    font-weight: 600;
+    font-family: cursive;
+    text-align: center;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: rgb(198, 229, 240);
+    /* opacity: .8; */
+}
+
+.profile-content .profile-text .item1 {
+    margin-top: 10px;
+    /* background-color: lightgray; */
+}
+
+.profile-text .item1 p {
+    padding-top: 3px;    
+    color: darkcyan;
+    font-weight: 600;
+    
+}
+
+.profile-text .item1 h3 {
+    font-size: 25px;
+    font-family:sans-serif;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+    margin: auto;
+    padding: 3px 5px;    
+}
+
+.item1:last-child {
+    margin-bottom: 20px;
+}
+
+.profile-pic img{
+    max-width: 50vw;
+    max-height: 50vh;
+    overflow: hidden;        
+}
+
+.importance {
+    background-color: rgb(161, 160, 160);
+}
+
+.education .symbol {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5px;    
+}
+
+.education .symbol i {
+    color: rgb(180, 14, 14);
+    font-size: x-large;
+}
+
+.education .symbol h3 {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.education .text li {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 10px;
+}
+
+
+.experience .symbol {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5px;    
+}
+
+.experience .symbol i {
+    color: rgb(245, 185, 75);
+    font-size: x-large;
+}
+
+.experience .symbol h3 {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.experience .text li {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 10px;
+}
+
+.text label {
+    color: green;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.skills .symbol {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5px;    
+}
+
+.skills .symbol i {
+    color: rgb(68, 68, 231);
+    font-size: x-large;
+}
+
+.skills .symbol h3 {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.skills .text li {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 10px;
+}
+
+.certification .symbol {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5px; 
+    margin-bottom: 5px;   
+}
+
+.certification .symbol i {
+    color: rgb(18, 146, 18);
+    font-size: x-large;
+}
+
+.certification .symbol h3 {
+    padding-left: 10px;
+    font-weight: 700;    
+}
+
+.certification .pic-container {
+    /* width: 80vw; */
+    margin: auto;
+}
+
+.certification .pic-container img {
+    width: 100vw;   
+}
+
+@media screen and (min-width:992px) {
+    .under-nav {
+        display: flex;
+    }
+
+    .profile {
+        width: 30%;
+    }
+
+    .profile .title h2 {
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+
+    .item0 h3 {
+        font-size: 35px;
+    }
+
+    .profile-pic {
+        height: 35vh;
+    }
+
+    .profile-text .item1 p {
+        font-size: 12px;
+    }
+
+    .profile-text .item1 h3 {
+        font-size: 18px;
+    }
+
+    .importance {
+        width: 70%;
+    }
+
+    .education .symbol i {
+        margin-left: 5px;
+    }
+
+    .experience .symbol i {
+        margin-left: 5px;
+    }
+
+    .skills .symbol i {
+        margin-left: 5px;
+    }
+
+    .certification .pic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certification .pic-container img {
+        width: 40vw;
+    }
+
+}
