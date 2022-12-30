@@ -11,21 +11,40 @@
     <div class="full-screen-container">
         <div class="message-container">
             <h1 class="msg-title">Write to me</h1>
-            <form action="" class="form">
-                <div class="input-group">
-                    <label for="sender-name">Name</label>
-                    <input type="text" id="name">
-                </div>
-
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
+            <form class="form" id="form">
+                <div class="input-group" id="email-address">
+                    <label for="email-field">Email Address</label>
+                    <input type="email" id="email-field" name="email">
                     <span class="msg">Valid email</span>
                 </div>
 
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                    <span id="subject-require"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"  rows="8"></textarea>
+                </div>
                 <button type="submit" class="send">Send</button>
             </form>
         </div>
     </div>
+    <script src="contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("M8ORNnf0QvFMfIC4K");
+        })();
+     </script>
 </body>
 </html>

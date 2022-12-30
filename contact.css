@@ -61,7 +61,7 @@
     font-weight: lighter;
 }
 
-.input-group input {
+.input-group input, textarea {
     font-size: 1rem;
     padding: .5em;
     background-color: hsl(var(--primary-light-hsl), .3);
@@ -89,11 +89,15 @@
 }
 
 .input-group.success .msg {
-    color: hsl(var(--success-hsl), .25);
+    color: hsl(var(--success-hsl), 1);
 }
 
 .input-group.error .msg {
-    color: hsl(var(--error-hsl), .25);
+    color: hsl(var(--error-hsl), 1);
+}
+
+.input-group #subject-require {
+    color: hsl(var(--error-hsl), 1);
 }
 
 .send {
