@@ -20,6 +20,11 @@ nav {
     z-index: 1;
 }
 
+@font-face {
+    font-family: Jujutsu-Kaisen;
+    src: url("./fontType/Jujutsu\ Kaisen.ttf") format("truetype");
+}
+
 .logo-container .name {
     display: flex;
     justify-content: center;
@@ -44,7 +49,6 @@ nav {
     align-items: center;
     align-content: center;
     text-align: center;
-    /* font-size: smaller; */
     font-family: cursive;
 }
 
@@ -65,4 +69,95 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .7;
+}
+
+.content {
+    position: relative;
+    z-index: 1;   
+    font-weight:800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+}
+
+.content h1 {
+    color: red;
+    font-family: Jujutsu-Kaisen; 
+    font-size: 25px;  
+    text-align: center; 
+    width: 65vw;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening span {
+    font-weight: 600;
+    font-family: cursive;
+    padding: 5px;
+    text-align: center;
+}
+
+.opening .play {
+    margin: auto;
+    color: black;
+}
+
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.video-container.active {
+    visibility: visible;
+    opacity: 1;    
+}
+
+video {
+    max-width: 1200px;
+    width: 90vw;  
+    outline: none;
+}
+
+.video-container .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    max-width: 45px;
+    font-size: large;
+    /* color: white;     */
+}
+
+.video-container .close:hover {
+    color: rgb(240, 112, 112);
+}
+
+@media screen and (min-width:768px) {
+    .opening {
+        display: flex;
+        flex-direction: row;
+    }  
+    
+    .content h1 {
+        font-size: 50px;
+    }
 }
