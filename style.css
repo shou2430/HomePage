@@ -40,6 +40,7 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    box-shadow: none;
 }
 
 .pic img{
@@ -56,7 +57,7 @@
     transform: translateY(-50%);
     color: white;
     font-size: 20px;
-    opacity: .5;
+    opacity: .8;
     cursor: pointer;
 }
 

@@ -4,10 +4,31 @@ const prevE1 = document.querySelector(".prev");
 let currentImg = 1;
 let timeout;
 
+
+nextE1.addEventListener("touchstart", e=>{
+    currentImg++;
+    clearTimeout(timeout);
+    updateImg();
+})
+
+nextE1.addEventListener("touchend", e => {
+    nextE1.style.color = "white";
+})
+
 nextE1.addEventListener("click", e=>{
     currentImg++;
     clearTimeout(timeout);
     updateImg();
+})
+
+prevE1.addEventListener("touchstart", e=>{
+    currentImg--;
+    clearTimeout(timeout);
+    updateImg();
+})
+
+prevE1.addEventListener("touchend", e => {
+    prevE1.style.color = "white";
 })
 
 prevE1.addEventListener("click", e=>{
