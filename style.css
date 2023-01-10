@@ -213,8 +213,9 @@
 
     .text p {
         background-color: #333;
-        text-align: center;
+        /* text-align: center; */
         color: white;
+        line-height: 1.6em;
         /* padding: 5px 5px; */
         /* height: 500px; */
     }
