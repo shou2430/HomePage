@@ -70,6 +70,7 @@
 .profile-text .item1 h3 {
     font-size: 25px;
     font-family:sans-serif;
+    line-height: 1.3em;
 }
 
 .profile-pic {
@@ -233,6 +234,7 @@
 
     .profile-text .item1 h3 {
         font-size: 18px;
+        line-height: 1.6em;
     }
 
     .importance {
